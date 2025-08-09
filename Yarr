@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yarr | Growth Strategist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-gray-900 via-purple-900 to-black text-white font-sans">
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-4" data-aos="fade-up">
+    <h1 class="text-5xl md:text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-400">Yarr</h1>
+    <p class="text-xl md:text-2xl text-gray-300 mb-6">@YarrOnchain</p>
+    <p class="text-lg md:text-xl max-w-2xl mb-8 text-gray-400">Growth Strategist • Project Lead • Community Builder</p>
+    <a href="https://x.com/YarrOnchain?t=J2FxVTVKng_7gOCiy4pnzA&s=09" target="_blank" class="px-6 py-3 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full text-lg font-semibold hover:from-pink-500 hover:to-purple-500 transition">Connect on X</a>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 px-6 max-w-4xl mx-auto" data-aos="fade-right">
+    <h2 class="text-3xl font-bold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-400">About Me</h2>
+    <p class="text-gray-300 text-lg leading-relaxed text-center">I'm a Web3 growth strategist, project lead, and community builder passionate about creating thriving ecosystems. I help projects scale, engage communities, and develop long-term growth strategies that stick.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="py-16 px-6 bg-gray-800/60" data-aos="fade-left">
+    <h2 class="text-3xl font-bold mb-10 text-center bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-400">Projects</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-gray-800 rounded-xl p-6 hover:shadow-lg hover:shadow-pink-500/30 transition" data-aos="zoom-in" data-aos-delay="100">
+        <h3 class="text-xl font-semibold mb-2 text-pink-400">Project One</h3>
+        <p class="text-gray-400 mb-4">Brief description of your Web3 or community project.</p>
+        <a href="#" class="text-purple-400 hover:underline">View More →</a>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-6 hover:shadow-lg hover:shadow-pink-500/30 transition" data-aos="zoom-in" data-aos-delay="200">
+        <h3 class="text-xl font-semibold mb-2 text-pink-400">Project Two</h3>
+        <p class="text-gray-400 mb-4">Brief description of another project or case study.</p>
+        <a href="#" class="text-purple-400 hover:underline">View More →</a>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-6 hover:shadow-lg hover:shadow-pink-500/30 transition" data-aos="zoom-in" data-aos-delay="300">
+        <h3 class="text-xl font-semibold mb-2 text-pink-400">Project Three</h3>
+        <p class="text-gray-400 mb-4">Another placeholder for your portfolio work.</p>
+        <a href="#" class="text-purple-400 hover:underline">View More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16 px-6 max-w-4xl mx-auto text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-400">Let's Connect</h2>
+    <p class="text-gray-300 mb-6">Interested in collaborating or learning more about my work? Reach out anytime.</p>
+    <a href="https://x.com/YarrOnchain?t=J2FxVTVKng_7gOCiy4pnzA&s=09" target="_blank" class="px-6 py-3 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full text-lg font-semibold hover:from-pink-500 hover:to-purple-500 transition">Contact Me</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-500 border-t border-gray-800" data-aos="fade-in">
+    © 2025 Yarr. All rights reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: ["#ff007f", "#a855f7"] },
+        shape: { type: "circle" },
+        opacity: { value: 0.5, random: true },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 150, color: "#a855f7", opacity: 0.4, width: 1 },
+        move: { enable: true, speed: 2, direction: "none", random: false, straight: false, out_mode: "out" }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } },
+        modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
